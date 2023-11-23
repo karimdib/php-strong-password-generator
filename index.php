@@ -1,10 +1,13 @@
 <?php
 
+
 include __DIR__. '/function.php';
 
-$user_number= $_GET['user_number'];
+$user_number=  $_GET['user_number'] ?? null;
 
-  echo psw_generate($user_number);
+echo psw_generate($user_number);
+
+
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +20,7 @@ $user_number= $_GET['user_number'];
 <body>
     <form action="" method="GET">
         <p>Genera password:
-            <input type="text" name="user_number">
+            <input type="number" name="user_number" >
             <input type="submit" value="INVIA">
         </p>
     </form>
