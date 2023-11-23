@@ -16,7 +16,7 @@ $user_number= $_GET['user_number'];
 </head>
 <body>
     <form action="" method="GET">
-        <p>Genera Password:
+        <p>Genera password:
             <input type="text" name="user_number">
             <input type="submit" value="INVIA">
         </p>
